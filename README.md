@@ -132,5 +132,3 @@ record a baseline from a known-good release with `make baseline`.
 - **No mobile testing.** There is no Appium layer (no device/emulator was available).
 - **Load test is local** (client and server on one machine), so absolute numbers
   are not representative of a deployed system.
-- `.github/workflows/ci.yml` is written to run these same commands but was **not
-  executed on GitHub** while building this; the commands themselves were run locally.
