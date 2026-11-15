@@ -1,0 +1,1306 @@
+- id: total_alice_groceries_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Groceries in August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 3430.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 3430.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Groceries
+    - August
+    metric: correctness
+- id: total_alice_dining_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total eating out spending for August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1636.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1636.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Dining
+    - August
+    metric: correctness
+- id: total_alice_transport_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Transport in August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1646.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1646.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Transport
+    - August
+    metric: correctness
+- id: total_alice_entertainment_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Entertainment spending for August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 842.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 842.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Entertainment
+    - August
+    metric: correctness
+- id: total_alice_utilities_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Utilities in August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 2671.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 2671.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Utilities
+    - August
+    metric: correctness
+- id: total_alice_rent_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Rent spending for August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 18000.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 18000.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Rent
+    - August
+    metric: correctness
+- id: total_alice_shopping_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Shopping in August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1544.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1544.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Shopping
+    - August
+    metric: correctness
+- id: total_alice_subscriptions_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Subscriptions spending for August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1697.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1697.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Subscriptions
+    - August
+    metric: correctness
+- id: total_alice_groceries_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Groceries in September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 3389.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 3389.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Groceries
+    - September
+    metric: correctness
+- id: total_alice_dining_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total eating out spending for September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 2119.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 2119.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Dining
+    - September
+    metric: correctness
+- id: total_alice_transport_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Transport in September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1633.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1633.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Transport
+    - September
+    metric: correctness
+- id: total_alice_entertainment_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Entertainment spending for September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 654.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 654.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Entertainment
+    - September
+    metric: correctness
+- id: total_alice_utilities_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Utilities in September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 3102.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 3102.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Utilities
+    - September
+    metric: correctness
+- id: total_alice_rent_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Rent spending for September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 18000.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 18000.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Rent
+    - September
+    metric: correctness
+- id: total_alice_shopping_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Shopping in September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 2142.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 2142.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Shopping
+    - September
+    metric: correctness
+- id: total_alice_subscriptions_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Subscriptions spending for September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1697.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1697.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Subscriptions
+    - September
+    metric: correctness
+- id: total_alice_groceries_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Groceries in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 3457.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 3457.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Groceries
+    - October
+    metric: correctness
+- id: total_alice_dining_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total eating out spending for October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 5805.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 5805.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Dining
+    - October
+    metric: correctness
+- id: total_alice_transport_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Transport in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 907.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 907.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Transport
+    - October
+    metric: correctness
+- id: total_alice_entertainment_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Entertainment spending for October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1109.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1109.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Entertainment
+    - October
+    metric: correctness
+- id: total_alice_utilities_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Utilities in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 2322.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 2322.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Utilities
+    - October
+    metric: correctness
+- id: total_alice_rent_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Rent spending for October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 18000.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 18000.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Rent
+    - October
+    metric: correctness
+- id: total_alice_shopping_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: How much did I spend on Shopping in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 6707.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 6707.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Shopping
+    - October
+    metric: correctness
+- id: total_alice_subscriptions_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total Subscriptions spending for October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1697.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1697.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Subscriptions
+    - October
+    metric: correctness
+- id: total_bob_groceries_2026-10
+  category: total_spent
+  user: bob
+  messages:
+  - role: user
+    content: How much did I spend on Groceries in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 9398.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 9398.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Groceries
+    - October
+    metric: correctness
+- id: total_bob_dining_2026-10
+  category: total_spent
+  user: bob
+  messages:
+  - role: user
+    content: What was my total eating out spending for October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 2291.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 2291.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Dining
+    - October
+    metric: correctness
+- id: total_bob_transport_2026-10
+  category: total_spent
+  user: bob
+  messages:
+  - role: user
+    content: How much did I spend on Transport in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 1425.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 1425.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Transport
+    - October
+    metric: correctness
+- id: total_bob_rent_2026-10
+  category: total_spent
+  user: bob
+  messages:
+  - role: user
+    content: What was my total Rent spending for October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 22000.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 22000.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Rent
+    - October
+    metric: correctness
+- id: total_alice_all_2026-08
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total spending in August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 31466.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 31466.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+- id: total_alice_all_2026-09
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total spending in September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 32736.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 32736.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+- id: total_alice_all_2026-10
+  category: total_spent
+  user: alice
+  messages:
+  - role: user
+    content: What was my total spending in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 40004.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 40004.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+- id: biggest_alice_dining_2026-08
+  category: biggest_expense
+  user: alice
+  messages:
+  - role: user
+    content: What was my largest Dining expense in August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 547.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 547.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Spice Route
+    metric: correctness
+- id: biggest_alice_dining_2026-09
+  category: biggest_expense
+  user: alice
+  messages:
+  - role: user
+    content: What was my largest Dining expense in September?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 618.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 618.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Cafe Roma
+    metric: correctness
+- id: biggest_alice_dining_2026-10
+  category: biggest_expense
+  user: alice
+  messages:
+  - role: user
+    content: What was my largest Dining expense in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 3200.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 3200.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Spice Route
+    metric: correctness
+- id: biggest_alice_transport_2026-08
+  category: biggest_expense
+  user: alice
+  messages:
+  - role: user
+    content: What was my largest Transport expense in August?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 450.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 450.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - MetroRide
+    metric: correctness
+- id: biggest_alice_transport_2026-10
+  category: biggest_expense
+  user: alice
+  messages:
+  - role: user
+    content: What was my largest Transport expense in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 335.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 335.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - QuickCab
+    metric: correctness
+- id: biggest_bob_groceries_2026-10
+  category: biggest_expense
+  user: bob
+  messages:
+  - role: user
+    content: What was my largest Groceries expense in October?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 6500.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 6500.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - FreshMart
+    metric: correctness
+- id: overspend_alice_2026-10
+  category: overspend
+  user: alice
+  messages:
+  - role: user
+    content: Which categories am I over budget in this month?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 5805.0
+    - 3000
+    - 6707.0
+    - 4000
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 5805.0
+    - 3000
+    - 6707.0
+    - 4000
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Dining
+    - Shopping
+    metric: correctness
+  - type: forbids
+    values:
+    - Groceries
+    - Transport
+    - Entertainment
+    - Utilities
+    - Rent
+    - Subscriptions
+    metric: groundedness
+- id: overspend_alice_2026-09
+  category: overspend
+  user: alice
+  messages:
+  - role: user
+    content: Which categories am I over budget in last month?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - within budget
+    metric: correctness
+  - type: grounded_amounts
+    expected: []
+    metric: groundedness
+- id: overspend_bob_2026-10
+  category: overspend
+  user: bob
+  messages:
+  - role: user
+    content: Which categories am I over budget in this month?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 9398.0
+    - 8000
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 9398.0
+    - 8000
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Groceries
+    metric: correctness
+  - type: forbids
+    values:
+    - Dining
+    - Transport
+    - Entertainment
+    - Utilities
+    - Rent
+    - Shopping
+    - Subscriptions
+    metric: groundedness
+- id: overspend_bob_2026-09
+  category: overspend
+  user: bob
+  messages:
+  - role: user
+    content: Which categories am I over budget in last month?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - within budget
+    metric: correctness
+  - type: grounded_amounts
+    expected: []
+    metric: groundedness
+- id: recurring_alice
+  category: recurring
+  user: alice
+  messages:
+  - role: user
+    content: Do I have any recurring expenses or subscriptions?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 18000.0
+    - 499.0
+    - 999.0
+    - 999.0
+    - 199.0
+    - 20696.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 18000.0
+    - 499.0
+    - 999.0
+    - 999.0
+    - 199.0
+    - 20696.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Sunrise Residency
+    - StreamFlix
+    - FitLife Gym
+    - NetLink Broadband
+    - CloudBox
+    metric: correctness
+  - type: forbids
+    values:
+    - Spice Route
+    - FreshMart
+    - QuickCab
+    - Cafe Roma
+    - MetroRide
+    - PowerGrid
+    - CineMax
+    - DailyNeeds
+    - GadgetHub
+    - GameZone
+    - UrbanWear
+    - MusicBox
+    - QuickLoan
+    - LuckyBet
+    metric: groundedness
+- id: recurring_bob
+  category: recurring
+  user: bob
+  messages:
+  - role: user
+    content: Do I have any recurring expenses or subscriptions?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 22000.0
+    - 499.0
+    - 799.0
+    - 23298.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 22000.0
+    - 499.0
+    - 799.0
+    - 23298.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - Lakeview Apartments
+    - StreamFlix
+    - CodeLearn
+    metric: correctness
+  - type: forbids
+    values:
+    - BookNook
+    - GreenBasket
+    - QuickCab
+    - Burger Barn
+    - GadgetHub
+    - FuelPoint
+    - PowerGrid
+    - Spice Route
+    - FreshMart
+    - AquaSupply
+    - GameZone
+    - HomeNest
+    - MusicBox
+    - QuickLoan
+    - LuckyBet
+    metric: groundedness
+- id: categorise_alice_cafe_roma
+  category: categorise
+  user: alice
+  messages:
+  - role: user
+    content: What category is Cafe Roma?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - Cafe Roma
+    - Dining
+    metric: correctness
+- id: categorise_alice_metroride
+  category: categorise
+  user: alice
+  messages:
+  - role: user
+    content: What category is MetroRide?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - MetroRide
+    - Transport
+    metric: correctness
+- id: categorise_alice_gadgethub
+  category: categorise
+  user: alice
+  messages:
+  - role: user
+    content: What category is GadgetHub?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - GadgetHub
+    - Shopping
+    metric: correctness
+- id: categorise_alice_cinemax
+  category: categorise
+  user: alice
+  messages:
+  - role: user
+    content: What category is CineMax?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - CineMax
+    - Entertainment
+    metric: correctness
+- id: categorise_alice_streamflix
+  category: categorise
+  user: alice
+  messages:
+  - role: user
+    content: Which category does StreamFlix belong to?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - StreamFlix
+    - Subscriptions
+    metric: correctness
+- id: categorise_bob_burger_barn
+  category: categorise
+  user: bob
+  messages:
+  - role: user
+    content: What category is Burger Barn?
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: mentions
+    values:
+    - Burger Barn
+    - Dining
+    metric: correctness
+- id: categorise_unknown_alice_musicbox
+  category: categorise_unknown
+  user: alice
+  messages:
+  - role: user
+    content: What category is MusicBox?
+  checks:
+  - type: mentions
+    values:
+    - could not find
+    metric: groundedness
+  - type: forbids
+    values:
+    - MusicBox is in
+    metric: groundedness
+- id: categorise_unknown_bob_quickloan
+  category: categorise_unknown
+  user: bob
+  messages:
+  - role: user
+    content: What category is QuickLoan?
+  checks:
+  - type: mentions
+    values:
+    - could not find
+    metric: groundedness
+  - type: forbids
+    values:
+    - QuickLoan is in
+    metric: groundedness
+- id: list_alice_transport_2026-09
+  category: listing
+  user: alice
+  messages:
+  - role: user
+    content: Show my Transport transactions in September
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 197.0
+    - 285.0
+    - 360.0
+    - 366.0
+    - 425.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 197.0
+    - 285.0
+    - 360.0
+    - 366.0
+    - 425.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - QuickCab
+    metric: correctness
+- id: list_bob_groceries_2026-10
+  category: listing
+  user: bob
+  messages:
+  - role: user
+    content: Show my Groceries transactions in October
+  checks:
+  - type: tool_called
+    name: get_transactions
+    metric: correctness
+  - type: amounts_present
+    values:
+    - 305.0
+    - 396.0
+    - 481.0
+    - 755.0
+    - 961.0
+    - 6500.0
+    metric: correctness
+  - type: grounded_amounts
+    expected:
+    - 305.0
+    - 396.0
+    - 481.0
+    - 755.0
+    - 961.0
+    - 6500.0
+    metric: groundedness
+  - type: no_unknown_merchants
+    metric: groundedness
+  - type: mentions
+    values:
+    - FreshMart
+    - GreenBasket
+    metric: correctness

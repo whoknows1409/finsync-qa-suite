@@ -1,0 +1,41 @@
+name: QA suite
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 2 * * *"      # nightly: catches drift when the model/prompt changes without a code change
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: playwright install --with-deps chromium
+
+      - name: API + SQL data tests
+        run: python -m pytest api_tests -q
+
+      - name: LLM evaluation (84 cases x 3 repeats), DeepEval layer and baseline regression gate
+        run: python -m pytest llm_eval -q
+
+      - name: UI tests (Playwright)
+        run: python -m pytest ui_tests -q
+
+      - name: Prove the suite still catches injected bugs
+        run: python -m pytest meta_tests -q
+
+      - name: Load test (p95 < 300 ms, errors < 1%)
+        run: python perf/load_test.py --users 10 --requests 30
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qa-reports
+          path: reports/
