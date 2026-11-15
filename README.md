@@ -1,4 +1,5 @@
 # finsync-qa-suite
+[![QA suite](https://github.com/whoknows1409/finsync-qa-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/whoknows1409/finsync-qa-suite/actions/workflows/ci.yml)
 
 An end-to-end quality framework for an AI finance assistant and its web/API stack:
 **LLM evaluation with a regression gate, REST API tests, SQL data validation,
